@@ -21,7 +21,7 @@ class PlayRound
 
   def rounds
     until @round.flip >= @deck.cards.length
-      puts "This is card number #{@round.flip + 1} out of #{@deck.cards.length}"
+      puts "Card #{@round.flip + 1} of #{@deck.cards.length}"
       puts "Category: " + @round.current_card.category.to_s
       puts "Question: " + @round.current_card.question
       guess = gets.chomp.to_s
