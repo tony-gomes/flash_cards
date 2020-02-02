@@ -1,0 +1,24 @@
+Returns the integer square root of the non-negative integer n,.squrt,:Integer
+Iterates the given block int times passing in values from zero to int - 1,.times,:Integer
+Returns a string containing the character represented by the int's value according to encoding,.chr,:Integer
+Returns the successor of int i.e. the Integer equal to int+1,.next,:Integer
+
+Returns a new String with the given record separator removed from the end of str (if present),.chomp,:String
+Returns a new String with the last character removed,.chop,:String
+Passes each character in str to the given block or returns an enumerator if no block is given,.each_char,:String
+Returns a printable version of str surrounded by quote marks with special characters escaped,.inspect,:String
+
+Returns a copy of self with all nil elements removed,.compact,:Array
+Calls the given block for each element n times or forever if nil is given,.cycle,:Array
+Returns a new array that is a copy of the original array removing all occurrences of any item that also appear in other_ary,.difference,:Array
+Tries to return the element at position index,.fetch,:Array
+
+Returns a new hash consisting of entries for which the block returns true,.filter,:Hash
+Returns a new hash created by using hsh’s values as keys and the keys as values,.invert,:Hash
+Returns a new hash that combines the contents of the receiver and the contents of the given hashes,.merge,:Hash
+Removes a key-value pair from hsh and returns it as the two-item array [key => value],.shift,:Hash
+
+Returns two arrays: elements of enum for which the block evaluates to true & the second containing the rest,.partition,:Enumerable
+Returns the sum of elements in an Enumerable,.sum,:Enumerable
+Returns first n elements from enum,.take,:Enumerable
+Takes one element from enum and merges corresponding elements from each args,.zip,:Enumerable
