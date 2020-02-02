@@ -15,7 +15,7 @@ class CardGeneratorTest < MiniTest::Test
   end
 
   def test_card_generator_returns_cards
-    assert_equal 4, @card_stack.cards.length
+    assert_equal 5, @card_stack.cards.length
     assert_instance_of Card, @card_stack.cards.first
     assert_instance_of Card, @card_stack.cards.last
   end
