@@ -20,4 +20,3 @@ class CardGeneratorTest < MiniTest::Test
     assert_instance_of Card, @card_stack.cards.last
   end
 end
-

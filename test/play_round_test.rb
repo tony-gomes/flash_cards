@@ -1,5 +1,4 @@
 require_relative 'test_helper'
-require './lib/card'
 require './lib/turn'
 require './lib/deck'
 require './lib/round'

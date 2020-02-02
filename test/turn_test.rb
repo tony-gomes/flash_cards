@@ -7,7 +7,7 @@ class TurnTest < MiniTest::Test
   def setup
     @card_1 = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
     @turn_1 = Turn.new("Juneau", @card_1)
-    
+
     @card_2 = Card.new("Which planet is closest to the sun?", "Mercury", :STEM)
     @turn_2 = Turn.new("Saturn", @card_2)
   end
@@ -37,4 +37,3 @@ class TurnTest < MiniTest::Test
     assert_equal "Incorrect", @turn_2.feedback
   end
 end
-
