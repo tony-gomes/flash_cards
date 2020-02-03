@@ -16,7 +16,15 @@ class CardGeneratorTest < MiniTest::Test
 
   def test_card_generator_returns_cards
     assert_equal 5, @card_stack.cards.length
+
     assert_instance_of Card, @card_stack.cards.first
+    assert_equal "What is the capital of Alaska?", @card_stack.cards.first.question
+    assert_equal "Juneau", @card_stack.cards.first.answer
+    assert_equal ":Geography", @card_stack.cards.first.category
+
     assert_instance_of Card, @card_stack.cards.last
+    assert_equal "What is the largest planet in the solar system?", @card_stack.cards.last.question
+    assert_equal "Jupiter", @card_stack.cards.last.answer
+    assert_equal ":STEM", @card_stack.cards.last.category
   end
 end
